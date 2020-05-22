@@ -1,0 +1,83 @@
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    color: #3e3e3e;
+    width: 900px;
+    margin: 10px auto;
+    border: 1px dashed #7fa446;
+    padding: 20px 30px;
+}
+
+hr 
+{
+    border-color: #7fa446;
+}
+
+h1
+{
+    color: #7fa446;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+h3
+{
+    color: #46a471;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cost
+{
+    color: #a02136;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.title
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.description
+{
+    color: #9E9E9E;
+    padding-bottom: 15px;
+}
+
+div
+{
+    width: 150px;
+    height: 150px;
+}
+
+.menu_img
+{
+max-width: 100%;
+max-height: 100%;
+}
+
+footer
+{
+   color: #7fa446;
+   text-decoration: underline;
+}
+
+a
+{
+    color: #7fa446;
+}
+
+section
+{
+    border-bottom: 1px dashed #7fa446;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
