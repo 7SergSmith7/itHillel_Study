@@ -1,0 +1,118 @@
+
+@font-face {
+    font-family: Solomon;
+    src: url(/fonts/solomon_sans_normal.woff), url(/fonts/solomon_sans_normal_italic.woff2);
+    font-style: normal;
+    } 
+
+
+body {
+    font-family: Solomon, sans-serif;
+    font-size: 12px;
+   
+    
+}
+
+
+h2 {
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+p {
+    color: white;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.line {
+    background-color: white;
+    height: 5px;
+    width: 95%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+.block {
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    
+}
+
+.selected {
+    background-color: #FFFFFF;
+}
+
+.booked {
+    background-color: #B2A6D6;
+}
+
+.avaliable {
+    border: 1px solid #B2A6D6;
+    box-sizing: content-box;
+    height: 14px;
+    width: 14px;
+}
+
+.section{
+    display: flex;
+}
+
+.state {
+    display: flex;
+    align-items: baseline;
+}
+.row-blocks div{
+
+    display: flex;
+
+}
+
+.row-blocks {
+    justify-content: space-around;
+    display: flex;
+    padding: 0px 20px;
+    
+    padding-bottom: 20px;
+
+}
+
+
+
+.container {
+    background: #6449b0; 
+    padding: 
+    20px 20px 10px 20px; 
+    width: 300px; 
+    margin: 0 auto;
+    display: flex;
+    
+    flex-direction: column;
+
+}
+
+.screen {
+    margin-bottom: 20px;
+}
+.mid {
+    margin: 0 4px;
+}
+.two-sections {
+    padding-left:  60px;
+    padding-right: 60px;
+}
+
+.two-sections {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.last{
+    margin-bottom: 25px;
+}
