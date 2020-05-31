@@ -1,0 +1,70 @@
+.container {
+    height: 555px;
+    width: 560px;
+    padding: 10px;
+}
+.container div {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.green {
+    background-color: #2ECC71;
+}
+
+.violet{
+    background-color: #8E44AD;
+}
+
+.red {
+    background-color: #E74C3C;
+}
+
+.yellow {
+    background-color: #F1C40F;
+}
+.blue {
+    background-color: #3498DB;
+}
+
+.block-1 {
+    height: 135px;
+    width: 135px;
+    float:left;
+}
+.block-2 {
+    height: 135px;
+    width: 275px;
+    float: right;
+}
+.block-3 {
+    height: 275px;
+    width: 135px;
+    float: right;
+
+}
+.block-4 {
+    height: 415px;
+    width: 135px;
+    float: left;  
+}
+.block-5 {
+    height: 275px;
+    width: 135px;
+    float: left;
+}
+.block-6 {
+    height: 135px;
+    width: 135px;
+    float: right;
+}
+.block-7 {
+    height: 135px;
+    width: 275px;
+    float: right;
+}
+.block-8 {
+    height: 135px;
+    width: 415px;
+    float: right;
+}
