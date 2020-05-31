@@ -1,0 +1,193 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+h1 {
+    font-size: 33px;
+    text-transform: uppercase;
+    color: #31322C;
+    margin-bottom: 0px;
+}
+
+h3 {
+    margin-top: 23px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #31322C;
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #31322C;
+    width: 143px;
+    height: 37px;
+    border: 1px solid #31322C;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 18px;
+}
+
+.violet a {
+    color: #F4F8FB;
+    border: 1px solid #F4F8FB;
+}
+
+.container {
+    
+    width: 750px;
+    background-color: #F4F8FB;
+    text-align: center;
+}
+
+.main {
+    font-size: 14px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.flex{
+    height: 660px;
+    display: flex;
+    margin: 40px 65px 25px 65px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.green {
+    background-color: #89DE87;
+    width: 49%;  
+    
+}
+
+.pink {
+    background-color: #FD797D;
+    width: 49%;
+    
+   
+}
+
+.violet {
+    margin-top: 10px;
+    background-color: #A570D5;
+    width: 100%;
+    height: 39%;
+    
+}
+
+.number {
+    background: #31322C;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    
+}
+
+.violet .number  {
+    background: #FFFFFF;
+}
+
+.green .color-container {
+    padding: 20px;
+    text-align: left;
+}
+
+.violet .color-container{
+    padding: 20px;
+    text-align: left;
+}
+
+.pink .color-container {
+    padding: 20px;
+    text-align: right;
+}
+
+.digit {
+    font-weight: 500;
+    font-size: 33px;
+    line-height:40px;
+}
+
+.green .image-pokemon {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.pink .image-pokemon {
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.pink .digit {
+
+    color: #FD797D;
+  
+}
+.green .digit {
+   
+    color: #89DE87;
+    
+}
+
+.number.pink {
+    
+    position: relative;
+    left: 234px;
+
+}
+
+.violet .digit {
+   
+    color: #A570D5;
+    
+}
+
+.color-container {
+    color: #31322C;
+}
+
+.violet .color-container {
+    color:#FFFFFF;
+}
+
+.violet .color-container p {
+    padding-bottom: 15px;
+    color:#FFFFFF;
+}
+
+.color-container p {
+    padding-bottom: 15px;
+}
+
+.last-p {
+    width: 265px;
+    height: 34px;
+}
+
+.violet a {    
+    position: relative;
+    top: 30px;
+}
+
+.violet .image-pokemon {
+    position: relative;
+    bottom: 125px;
+    left: 350px;
+}
+.footer {
+    
+    font-size: 14px;
+    font-weight: 500;
+}
+.social {
+    display: flex;
+    padding: 0px 325px;
+    justify-content: space-around;
+    padding-bottom: 52px;
+}
