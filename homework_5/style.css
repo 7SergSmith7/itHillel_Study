@@ -24,15 +24,13 @@ h2 {
 
 p {
     color: white;
-    margin-top: 3px;
-    margin-left: 5px;
+    margin: 0 0 0 5px;
 }
 
 .line {
     background-color: white;
-    height: 5px;
+    height: 3px;
     width: 95%;
-    display: flex;
     margin: auto;
     margin-bottom: 10px;
 }
@@ -67,6 +65,7 @@ p {
 .state {
     display: flex;
     align-items: baseline;
+   
 }
 .row-blocks div{
 
@@ -94,7 +93,7 @@ p {
     display: flex;
     
     flex-direction: column;
-
+    padding-bottom: 25px;
 }
 
 .screen {
@@ -103,16 +102,5 @@ p {
 .mid {
     margin: 0 4px;
 }
-.two-sections {
-    padding-left:  60px;
-    padding-right: 60px;
-}
 
-.three-sections {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-.last{
-    margin-bottom: 25px;
-}
