@@ -1,11 +1,11 @@
 .container {
-    height: 555px;
-    width: 560px;
-    padding: 10px;
+    height: 300px;
+    width: 300px;
+    
 }
 .container div {
-    margin-bottom: 5px;
-    margin-right: 5px;
+    margin-bottom: 1px;
+    margin-right: 1px;
 }
 
 .green {
@@ -28,43 +28,43 @@
 }
 
 .block-1 {
-    height: 135px;
-    width: 135px;
+    height: 74px;
+    width: 74px;
     float:left;
 }
 .block-2 {
-    height: 135px;
-    width: 275px;
+    height: 74px;
+    width: 149px;
     float: right;
 }
 .block-3 {
-    height: 275px;
-    width: 135px;
+    height: 149px;
+    width: 74px;
     float: right;
 
 }
 .block-4 {
-    height: 415px;
-    width: 135px;
+    height: 224px;
+    width: 74px;
     float: left;  
 }
 .block-5 {
-    height: 275px;
-    width: 135px;
+    height: 149px;
+    width: 74px;
     float: left;
 }
 .block-6 {
-    height: 135px;
-    width: 135px;
+    height: 74px;
+    width: 74px;
     float: right;
 }
 .block-7 {
-    height: 135px;
-    width: 275px;
+    height: 74px;
+    width: 149px;
     float: right;
 }
 .block-8 {
-    height: 135px;
-    width: 415px;
+    height: 74px;
+    width: 224px;
     float: right;
 }
