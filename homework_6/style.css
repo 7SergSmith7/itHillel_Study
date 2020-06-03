@@ -98,11 +98,14 @@ i:first-of-type{
     padding: 40px 40px;
     box-sizing: border-box;
     float: left;
+    background-color: #FAFCFF;
+    margin-bottom: 10px;
     
 }
 
 .second-block {
     float: right;
+    margin-bottom: 10px;
 }
 .third-block {
     float: left;
@@ -129,4 +132,8 @@ i:first-of-type{
     color: #315EFB;
     border: 1px solid #315EFB;
     box-sizing: border-box;
+}
+
+.news {
+    background-color: #FAFCFF;
 }
