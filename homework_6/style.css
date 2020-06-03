@@ -125,6 +125,8 @@ i:first-of-type{
 
 .news img {
     width: 366px;
+    display: block;
+    margin: 0 auto;
 }
 
 .main-btn:hover {
@@ -133,6 +135,7 @@ i:first-of-type{
     border: 1px solid #315EFB;
     box-sizing: border-box;
 }
+
 
 .news {
     background-color: #FAFCFF;
