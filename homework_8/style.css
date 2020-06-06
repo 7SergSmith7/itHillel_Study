@@ -1,0 +1,167 @@
+.container {
+    width: auto;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/bg.jpg");
+    background-size: cover;
+    position: relative;
+    margin: 0;
+
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #244C8E;
+}
+
+.header {
+    display: flex;
+    margin: 0 115px;
+    
+}
+
+.header-bar {
+    width: 100%;
+    background-color: rgba(227, 231, 237, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+   
+}
+
+.sities {
+    display: flex;
+}
+.sities a {
+    text-transform: uppercase;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.sities div{
+    text-transform: uppercase;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #244C8E;
+}
+.lang span {
+    text-transform: uppercase;
+    
+}
+
+.right-nav {
+    display: flex;
+    margin-left: 400px;
+}
+
+.contacts {
+    margin-right: 35px;
+    color: #244C8E;
+    font-weight: bold;
+    
+}
+.lang span:first-of-type  {
+    margin-right: 10px;
+}
+.contacts span:first-of-type  {
+    margin-right: 10px;
+}
+
+
+.status {
+    background-color: #4ED401;
+    padding: 0 8px;
+    color: white;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.ru {
+    background: #244C8E;
+    border-radius: 2px;
+    padding: 0 8px;
+    color: white;
+}
+.ukr {
+    color: #244C8E;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(124.64deg, rgba(33, 76, 227, 0.5) 0%, rgba(67, 110, 221, 0.5) 47.4%, rgba(173, 57, 214, 0.5) 100%);
+    z-index: 0;
+}
+
+img {
+    
+    width: 12px;
+}
+
+.menu {
+    position: relative;
+}
+.submenu {
+    padding: 15px;
+    margin: 0;
+    position: absolute;
+    width: 200px;
+    height: 125px;
+    left: -80px;
+    top: 33px;
+    background: rgba(189, 201, 220, 0.9);
+    border-radius: 0px 0px 2px 2px;
+    z-index: 1;
+    list-style-type: none;
+    border-radius: 3px;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    display: none;
+
+}
+
+.submenu li {
+    padding-bottom: 6px;
+}
+
+.submenu a {
+    text-transform:none;
+}
+
+.submenu hr{
+    
+    border: none;
+    background: #D8DEEA;
+    height: 1px;
+}
+
+.submenu img {
+    padding-right: 5px;
+}
+
+.menu:hover {
+    background-color: #244C8E;
+    color: white;
+    border-radius: 2px;
+    padding: 0 11px;
+}
+.menu:hover .submenu{
+    display: block;
+
+}
