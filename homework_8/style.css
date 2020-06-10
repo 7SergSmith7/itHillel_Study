@@ -6,6 +6,8 @@
     background-size: cover;
     position: relative;
     margin: 0;
+    font-size: 12px;
+    
 
 }
 
@@ -20,7 +22,7 @@ a {
 
 .header {
     display: flex;
-    margin: 0 115px;
+    margin: 0 200px;
     
 }
 
@@ -41,7 +43,7 @@ a {
 .sities {
     display: flex;
 }
-.sities a {
+.sities .sity {
     text-transform: uppercase;
     margin-right: 15px;
     font-weight: bold;
@@ -49,7 +51,6 @@ a {
 
 .sities div{
     text-transform: uppercase;
-    margin-right: 15px;
     font-weight: bold;
     color: #244C8E;
 }
@@ -60,7 +61,7 @@ a {
 
 .right-nav {
     display: flex;
-    margin-left: 400px;
+    margin-left: 300px;
 }
 
 .contacts {
@@ -122,10 +123,10 @@ img {
     width: 200px;
     height: 125px;
     left: -80px;
-    top: 33px;
+    top: 32px;
     background: rgba(189, 201, 220, 0.9);
     border-radius: 0px 0px 2px 2px;
-    z-index: 1;
+    z-index: 3;
     list-style-type: none;
     border-radius: 3px;
     font-family: Open Sans;
@@ -155,13 +156,243 @@ img {
     padding-right: 5px;
 }
 
-.menu:hover {
+.kyiv {
+    margin-right: 0;
+    background-color:  none;
+
+    
+    padding: 0 15px;
+}
+.menu .kyiv:hover {
     background-color: #244C8E;
     color: white;
     border-radius: 2px;
-    padding: 0 11px;
+    padding: 0 15x;
 }
 .menu:hover .submenu{
     display: block;
+    z-index: 3;
+    
 
+}
+
+.logo {
+    width: 400px;
+    z-index: 2;
+  
+
+}
+
+
+.main-block {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    color: #4ED401;
+    z-index: 2;
+    position: relative;
+    padding: 0 190px 0 220px;
+    top: 70px;
+    width: 1000px;
+}
+
+.main-block .logo{
+    margin-top: 50px;
+}
+.main-block p{
+    padding-top: 0px;
+    padding-bottom: 25px;
+    margin: 0 0;
+}
+.main-block hr {
+    
+    background-color: white;
+    height: 2px;
+    border: none;
+    width: 250px;
+    margin: 0 0 20px 0;
+}
+
+.main-block a{
+    padding: 12px 25px;
+    background: #4ED401;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.map {
+    float: right;
+    position: relative;
+    
+}
+.map-img {
+    width: 500px;
+}
+
+.map-icons span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    
+}
+.map-icons img {
+    position: absolute;
+
+}
+
+.kyiv-map {
+    
+    bottom: 230px;
+    left: 200px;
+}
+    
+
+.kharkov-map {
+    bottom: 210px;
+    left: 325px;
+
+}
+
+.dnepr-map {
+    bottom: 170px;
+    left: 310px;
+}
+
+.odessa-map {
+    bottom: 80px;
+    left: 190px;
+}
+
+.map-icons img{
+    width: 15px;
+}
+
+.kyiv-map-location {
+    bottom: 250px;
+    left: 235px;
+}
+
+.kharkov-map-location {
+    bottom: 230px;
+    left: 380px;
+
+}
+.dnepr-map-location {
+    bottom: 190px;
+    left: 350px;
+}
+
+.odessa-map-location {
+    bottom: 100px;
+    left: 240px;
+}
+.kyiv-map-location-pin {
+   
+    bottom: 255px;
+    left: 235px;
+}
+
+.second-menu {
+    
+    
+    padding: 0 190px 0 220px;
+    position: relative;
+    z-index: 2;
+    top: 70px;
+    width: 1000px;
+}
+.second-menu-top-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+.shuttle-big {
+    width: 70px;
+}
+.second-menu-top {
+    display: flex;
+}
+.number-students {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 54px;
+    color: #4ED401;
+}
+.big-plus {
+    background-color: #4ed401;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto 7px;
+}
+.first{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: white;
+    margin: auto;
+}
+.second-menu hr{
+    
+    
+    width: 1000px;
+    background-color: white;
+    height: 2px;
+    border: none;
+    
+}
+.shuttle {
+    width: 50px;
+    margin-bottom: auto;
+}
+.second-menu-bot {
+    display: flex;
+}
+.number-year {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 54px;
+    color: #4ED401;
+    margin: 0 0;
+}
+
+.year{
+    background-color: #4ed401;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.second-menu-bot-p {
+    margin: 0 0;
+}
+
+.second-menu-bot-p {
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+}
+.second-menu-bot-1 {
+ display: flex;
+ justify-content: space-between;
+}
+.plus {
+    background-color: #4ed401;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0 5px;
+    border-radius: 50%;
+    vertical-align: middle;
 }
