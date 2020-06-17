@@ -248,44 +248,51 @@
             <div class="form" id="form">
               <form action="">
                 <div class="form_row">
-                  <p><span></span>Имя</p>
-                  <input placeholder="Сергей" type="text" id="name" />
+                  <input placeholder="Сергей" type="text" id="name" required/>
+                  <span class="req"></span><p>Имя*</p>
+                  
                 </div>
                 <hr />
                 <div class="form_row">
-                  <p><span></span>Email</p>
                   <input
-                    placeholder="sergey@gmail.com"
-                    type="email"
-                    id="email"
-                  />
+                  placeholder="sergey@gmail.com"
+                  type="email"
+                  id="email"
+                  required
+                />
+                <span class="req"></span><p>Email*</p>
+                 
                 </div>
 
                 <hr />
                 <div class="form_row">
-                  <p><span></span>Телефон</p>
-                  <input placeholder="0932751511" type="text" id="phone" />
+                  <input placeholder="0932751511" type="text" id="phone"  />
+                  <span class="phone"></span><p>Телефон</p>
+                  
                 </div>
                 <hr />
                 <div class="form_row">
-                  <p><span></span>Город</p>
-                  <select name="sity">
+                  <select name="sity" class="sity" required=''>
+                    <option selected disabled value="">Город</option>
                     <option>Киев</option>
                     <option>Одесса</option>
                     <option>Харьков</option>
                     <option>Днепр</option>
                   </select>
+                  <span class="req"></span><p>Город*</p>
+                  
                 </div>
                 <hr />
                 <div class="form_row">
-                  <p><span></span>Курс</p>
-                  <select name="course" class="course">
-                    <option>Выберите</option>
+                  <select name="course" class="course" required>
+                    <option selected disabled value="">Выберите</option>
                     <option>Front-End Basic</option>
                     <option>Front-End Pro</option>
                     <option>React</option>
                     <option>PHP</option>
                   </select>
+                  <span class="req"></span><p>Курс*</p>
+                  
                 </div>
               </form>
             </div>
