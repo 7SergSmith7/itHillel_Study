@@ -520,3 +520,55 @@ select:required:valid + span {
   left: 0;
   top: 15px;
 }
+
+form:valid button {background: green;}
+
+@media (max-width: 1500px) {
+  .header-bar {
+    
+    font-size: 10px;
+  }
+  .right-nav {
+    margin-left: 40px;
+    
+  }
+  .contacts {
+    margin-right: 20px;
+  }
+  .header {
+    margin: 0 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-bar {
+    
+    font-size: 8px;
+  }
+  .right-nav {
+    margin-left: 30px;
+   
+  }
+  .contacts {
+    margin-right: 10px;
+  }
+  .header {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-bar {
+    
+    font-size: 5px;
+  }
+  .right-nav {
+    margin-left: 6px;
+  }
+  .contacts {
+    margin-right: 5px;
+  }
+  .header {
+    margin: 0 30px;
+  }
+}
