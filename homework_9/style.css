@@ -1,0 +1,51 @@
+hr {
+  border: 1px solid #ffe5e5;
+  width: 100%;
+}
+.container {
+  padding: 50px 50px;
+}
+
+.row {
+  margin: 20px 0px;
+}
+.row {
+  width: 1000px;
+  border: 15px solid #ffe5e5;
+}
+.first-row {
+  background-color: rgba(149, 123, 190, 0.3);
+  border: 1px solid #957bbe;
+}
+
+.second-row {
+  background-color: rgba(128, 255, 167, 0.76);
+  border: 1px solid rgba(86, 216, 126, 0.9);
+}
+
+.third-row {
+  background-color: rgba(128, 189, 255, 0.76);
+  border: 1px solid rgba(95, 158, 226, 0.76);
+}
+
+.fourth-row {
+  background-color: rgba(255, 128, 128, 0.76);
+  border: 1px solid rgba(224, 89, 89, 0.76);
+}
+
+.fifth-row {
+  background-color: rgba(255, 251, 128, 0.76);
+  border: 1px solid rgba(241, 236, 79, 0.76);
+}
+
+.max {
+  width: auto;
+  padding-top: 0px;
+  border-color: #a1ade0;
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.last {
+  margin-top: 0;
+}
