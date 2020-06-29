@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>First screen</title>
+  </head>
+  <body>
+    <div class="container1">
+      <header>
+        <div class="header-bar">
+          <nav class="header">
+            <div class="sities">
+              <div class="menu">
+                <a class="kyiv" href="">киев</a>
+                <ul class="submenu">
+                  <li><a href="">О школе</a></li>
+                  <li><a href="">Преподаватели</a></li>
+                  <li><a href="">Стать преподавателем</a></li>
+                  <li><a href="">Отзывы</a></li>
+                  <li><hr noshade /></li>
+                  <li>
+                    <img
+                      src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/heart.svg"
+                      alt="phone"
+                    /><a href="">Проверка сертификата</a>
+                  </li>
+                </ul>
+              </div>
+              <a class="sity" href="">одесса</a>
+              <a class="sity" href="">днепр</a>
+              <a class="sity" href="">харьков</a>
+            </div>
+            <a class="status1">online</a>
+
+            <div class="right-nav">
+              <div class="contacts">
+                <img
+                  src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/phone-call.svg"
+                  alt="phone"
+                />
+                <span>+38 (093) 543 77 47</span>
+                <img
+                  src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/email.svg"
+                  alt="email"
+                />
+                <span>kyiv@ithillel@gmail.com</span>
+              </div>
+              <div class="lang">
+                <span class="ru">рус</span> <span class="ukr">укр</span>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="main-block">
+          <div class="map">
+            <div class="map-icons">
+              <span class="kyiv-map">киев</span>
+              <img
+                class="kyiv-map-location"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/map-location.svg"
+                alt="map-location"
+              />
+              <img
+                class="kyiv-map-location-pin"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/map-pin.svg"
+                alt="map-location-pin"
+              />
+              <span class="kharkov-map">харьков</span>
+              <img
+                class="kharkov-map-location"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/map-location.svg"
+                alt="map-location"
+              />
+              <span class="odessa-map">одесса</span>
+              <img
+                class="odessa-map-location"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/map-location.svg"
+                alt="map-location"
+              />
+              <span class="dnepr-map">днепр</span>
+              <img
+                class="dnepr-map-location"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/map-location.svg"
+                alt="map-location"
+              />
+            </div>
+            <img
+              class="map-img"
+              src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/map.png"
+              alt="map"
+            />
+          </div>
+
+          <img
+            class="logo"
+            src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/logo.png"
+            alt="logo"
+          />
+          <p>Учись ради мечты!</p>
+          <hr />
+                  <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Записаться на курс
+        </button>
+
+  
+        </div>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Заявка на регистрацию
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="close" aria-hidden="true">&times;</span>
+                      </button>
+                      <div class="main_form">
+                        <img
+                          class="question_sign"
+                          src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/question.svg"
+                          alt="question_sign"
+                        />
+                        <p>
+                          Оставьте ваши контактные данные, <br />и мы вам обязательно
+                          перезвоним!
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div class="modal-body">
+                      <div class="form_row">
+                  <input placeholder="Сергей" type="text" id="name" required/>
+                  <span class="req"></span><p>Имя*</p>
+                  
+                </div>
+                <hr />
+                <div class="form_row">
+                  <input
+                  placeholder="sergey@gmail.com"
+                  type="email"
+                  id="email"
+                  required
+                />
+                <span class="req"></span><p>Email*</p>
+                 
+                </div>
+
+                <hr />
+                <div class="form_row">
+                  <input placeholder="0932751511" type="text" id="phone"  />
+                  <span class="phone"></span><p>Телефон</p>
+                  
+                </div>
+                <hr />
+                <div class="form_row">
+                  <select name="sity" class="sity" required=''>
+                    <option selected disabled value="">Город</option>
+                    <option>Киев</option>
+                    <option>Одесса</option>
+                    <option>Харьков</option>
+                    <option>Днепр</option>
+                  </select>
+                  <span class="req"></span><p>Город*</p>
+                  
+                </div>
+                <hr />
+                <div class="form_row">
+                  <select name="course" class="course" required>
+                    <option selected disabled value="">Выберите</option>
+                    <option>Front-End Basic</option>
+                    <option>Front-End Pro</option>
+                    <option>React</option>
+                    <option>PHP</option>
+                  </select>
+                  <span class="req"></span><p>Курс*</p>
+                  
+                </div>
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <button type="button" class="btn  btn_form main-form-btn">оставить заявку</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <br>
+            <br>  
+        <div class="second-menu">
+          <div class="second-menu-top-flex">
+            <div class="second-menu-top">
+              <img
+                class="shuttle-big"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/icon-shuttle.svg"
+                alt="shuttle"
+              />
+              <p class="number-students">12000</p>
+              <span class="big-plus">+</span>
+              <p class="first">Выпускников<br />Школы</p>
+            </div>
+            <div class="second-menu-top">
+              <img
+                class="shuttle-big"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/icon-shuttle.svg"
+                alt="shuttle"
+              />
+              <p class="number-students">12000</p>
+              <span class="big-plus">+</span>
+              <p class="first">Выпускников Школы</p>
+            </div>
+          </div>
+          <hr />
+          <div class="second-menu-bot-1">
+            <div class="second-menu-bot">
+              <img
+                class="shuttle"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/icon-shuttle.svg"
+                alt="shuttle"
+              />
+              <div>
+                <p class="number-year">7 <span class="year">лет</span></p>
+
+                <p class="second-menu-bot-p">
+                  Школа предоставляет <br />образовательные услуги
+                </p>
+              </div>
+            </div>
+            <div class="second-menu-bot">
+              <img
+                class="shuttle"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/icon-shuttle.svg"
+                alt="shuttle"
+              />
+              <div>
+                <p class="number-year">7 <span class="plus">+</span></p>
+
+                <p class="second-menu-bot-p">
+                  Школа предоставляет <br />образовательные услуги
+                </p>
+              </div>
+            </div>
+            <div class="second-menu-bot">
+              <img
+                class="shuttle"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/icon-shuttle.svg"
+                alt="shuttle"
+              />
+              <div>
+                <p class="number-year">7 <span class="year">лет</span></p>
+
+                <p class="second-menu-bot-p">
+                  Школа предоставляет <br />образовательные услуги
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="second-menu-bot-1">
+            <div class="second-menu-bot">
+              <img
+                class="shuttle"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/icon-shuttle.svg"
+                alt="shuttle"
+              />
+              <div>
+                <p class="number-year">7 <span class="plus">+</span></p>
+
+                <p class="second-menu-bot-p">
+                  Школа предоставляет <br />образовательные услуги
+                </p>
+              </div>
+            </div>
+            <div class="second-menu-bot">
+              <img
+                class="shuttle"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/icon-shuttle.svg"
+                alt="shuttle"
+              />
+              <div>
+                <p class="number-year">7 <span class="year">лет</span></p>
+
+                <p class="second-menu-bot-p">
+                  Школа предоставляет <br />образовательные услуги
+                </p>
+              </div>
+            </div>
+            <div class="second-menu-bot">
+              <img
+                class="shuttle"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/icon-shuttle.svg"
+                alt="shuttle"
+              />
+              <div>
+                <p class="number-year">7 <span class="plus">+</span></p>
+
+                <p class="second-menu-bot-p">
+                  Школа предоставляет <br />образовательные услуги
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="block-carousel">
+        <h2>Отзывы Выпускников Школы</h2>
+       
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>
+                Хочу выразить благодарность школе hillel за отличную организацию учебного процесса, за новые и полезные знания. Отдельное спасибо Александру Олейнику за обучение, поддержку, веселую атмосферу. Все профессионально и в тему, без воды. Очень крутой специалист. Всем рекомендую. 
+              </p>
+              <div>
+                <img class="icon-photo" src="https://assets.ithillel.ua/Anonymous.png" alt="Ольга"> 
+                <span class="autor">Ольга</span> 
+                <span class="rating"></span>
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+              </div>
+              
+            </div>
+            <div class="carousel-item">
+              <p>Так, як курс пройшов в режимі онлай через карантин, то він пройшов досить успішно. Буду продовжувати навчання на курс Front-End Pro!</p>
+              <div>
+                <img class="icon-photo" src="https://assets.ithillel.ua/Anonymous.png" alt="Ольга"> 
+                <span class="autor">Ольга</span> 
+                <span class="rating"></span>
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <p>Онлайн-занятия ни разу не проходили положенных 2 часа, там минимум 3. Если какая-то тема не поддавалась, она всегда приходила на помощь, частенько делала созвон! И как круто, что домашки мы проверяли вместе. Сразу было понятно, где какие ошибки, чтобы в следующий раз их не допустить!)) Мне определенно повезло что со школой, что с преподавателем ❤ Спасибо вам 🎉</p>
+              <div>
+                <img class="icon-photo" src="https://assets.ithillel.ua/Anonymous.png" alt="Ольга"> 
+                <span class="autor">Ольга</span> 
+                <span class="rating"></span>
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <p>
+                Прошла 2 курса по Front-End. 
+    Курс Basic — интродакшн такого стека технологий, как HTML5, CSS3, Bootstrap, Git, npm, адаптивная и отзывчивая верстка и много полезного другого. Отличный и оперативный старт в профессию фронт-енд дева. Благодаря Катерине Шиповской в частности.
+    Front-End Pro — полное изучение Java Script с нуля, а также знакомство с фреймворками JQuery и на выбор учащихся — Angular, React или Vue.js, закрепление других полезных навыков для профессии. Опять жа благодаря Катерине Шиповской.
+    Много практики, полезной информации, объемный пакет необходимых навыков и технологий, поддержка профессионального нетворкинга и отличные преподаватели. В частности и в особенности Катерина Шиповская)
+              </p>
+              <div>
+                <img class="icon-photo" src="https://assets.ithillel.ua/Anonymous.png" alt="Ольга"> 
+                <span class="autor">Ольга</span> 
+                <span class="rating"></span>
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <p>Ника Фендер, жду встречи на курсе SMM Pro.</p>
+              <div>
+                <img class="icon-photo" src="https://assets.ithillel.ua/Anonymous.png" alt="Ольга"> 
+                <span class="autor">Ольга</span> 
+                <span class="rating"></span>
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+                <img class="star" src="https://assets.ithillel.ua/assets/school/images/rating/rating_empty.svg" alt="star">
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#c" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+        <div class="white_block">
+          <div class="container_form">
+            <div class="header_form">
+              <h2>Заявка на регистрацию</h2>
+              <a href="#"
+                ><img
+                  class="modal_close"
+                  src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/modal_close.svg"
+                  alt="modal_close"
+              /></a>
+            </div>
+            <div class="main_form">
+              <img
+                class="question_sign"
+                src="C:/Users/SergS/OneDrive/Рабочий стол/homework_8/images/question.svg"
+                alt="question_sign"
+              />
+              <p>
+                Оставьте ваши контактные данные, <br />и мы вам обязательно
+                перезвоним!
+              </p>
+            </div>
+
+            <div class="form" id="form">
+              <form action="">
+                <div class="form_row">
+                  <input placeholder="Сергей" type="text" id="name" required/>
+                  <span class="req"></span><p>Имя*</p>
+                  
+                </div>
+                <hr />
+                <div class="form_row">
+                  <input
+                  placeholder="sergey@gmail.com"
+                  type="email"
+                  id="email"
+                  required
+                />
+                <span class="req"></span><p>Email*</p>
+                 
+                </div>
+
+                <hr />
+                <div class="form_row">
+                  <input placeholder="0932751511" type="text" id="phone"  />
+                  <span class="phone"></span><p>Телефон</p>
+                  
+                </div>
+                <hr />
+                <div class="form_row">
+                  <select name="sity" class="sity" required=''>
+                    <option selected disabled value="">Город</option>
+                    <option>Киев</option>
+                    <option>Одесса</option>
+                    <option>Харьков</option>
+                    <option>Днепр</option>
+                  </select>
+                  <span class="req"></span><p>Город*</p>
+                  
+                </div>
+                <hr />
+                <div class="form_row">
+                  <select name="course" class="course" required>
+                    <option selected disabled value="">Выберите</option>
+                    <option>Front-End Basic</option>
+                    <option>Front-End Pro</option>
+                    <option>React</option>
+                    <option>PHP</option>
+                  </select>
+                  <span class="req"></span><p>Курс*</p>
+                  
+                </div>
+              </form>
+            </div>
+            <button class="btn_form">оставить заявку</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>  
+<script>
+ $('.carousel').carousel({
+  interval: 5000
+ });
+</script>    
+</body>
+</html>
