@@ -1,0 +1,114 @@
+.menu_options a {
+  text-decoration: none;
+  color: #9f9f9f;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10px; }
+.menu_options img {
+  width: 10px;
+  margin-right: 7px;
+  opacity: 0.6; }
+.menu_options img:hover {
+  opacity: 1; }
+
+.menu_options a:hover {
+  color: #616060; }
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+
+.block {
+  display: block;
+  width: 140px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 15px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  opacity: 0.8; }
+
+.block:hover {
+  opacity: 1; }
+
+.first {
+  background: #b88ae2; }
+
+.second {
+  background: #ffa793; }
+
+.third {
+  background: #f98da4; }
+
+.fourth {
+  background: #ffbe82; }
+
+h3 {
+  margin: 0;
+  font-size: 12px;
+  color: #4c4949; }
+
+.block-calendar {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-left: 5px solid;
+  box-sizing: border-box; }
+  .block-calendar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    opacity: 0.7; }
+  .block-calendar a:hover {
+    opacity: 1; }
+  .block-calendar p {
+    font-size: 10px;
+    color: #9f9f9f; }
+
+.block-calendar.first {
+  background: #fbe3e9;
+  border-color: #f98da4; }
+  .block-calendar.first a {
+    color: #f98da4; }
+
+.block-calendar.second {
+  background: #fff0dc;
+  border-color: #ffbe82; }
+  .block-calendar.second a {
+    color: #ffbe82; }
+
+.block-calendar.third {
+  background: #eae3f1;
+  border-color: #b88ae2; }
+  .block-calendar.third a {
+    color: #b88ae2; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #aaa3c7;
+  font-weight: 900;
+  letter-spacing: 1px; }
+
+hr {
+  border-top: 1px solid #ebe8f5;
+  width: 100%; }
+
+.container {
+  font-family: "Lato";
+  width: 300px;
+  margin: 10px 50px; }
+
+/*# sourceMappingURL=style.css.map */
