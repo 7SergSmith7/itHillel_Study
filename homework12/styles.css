@@ -1,0 +1,94 @@
+h2 {
+  padding: 0 0;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 0; }
+
+.container {
+  display: flex;
+  width: 675px;
+  margin-top: 50px;
+  margin-left: 50px;
+  justify-content: space-between; }
+
+.flag {
+  width: 70px;
+  height: 70px;
+  display: block;
+  border-radius: 50%;
+  margin: 15px auto; }
+
+.star {
+  display: flex;
+  margin: 0 auto;
+  background-image: url("./images/star.svg");
+  background-size: 10px 10px;
+  height: 10px; }
+
+.argentina {
+  width: 110px;
+  height: 150px;
+  background: #F5F5F5;
+  border-radius: 6px;
+  border-bottom: 2px solid blue; }
+  .argentina h2 {
+    color: #388DF0; }
+  .argentina .star {
+    width: 10px; }
+
+.brazil {
+  width: 110px;
+  height: 150px;
+  background: #F5F5F5;
+  border-radius: 6px;
+  border-bottom: 2px solid red;
+  border-color: #F2463E; }
+  .brazil else {
+    border-color: #4154B3; }
+  .brazil h2 {
+    color: #78A955; }
+  .brazil .star {
+    width: 20px; }
+
+.canada {
+  width: 110px;
+  height: 150px;
+  background: #F5F5F5;
+  border-radius: 6px;
+  border-bottom: 2px solid red;
+  border-color: #F2463E; }
+  .canada else {
+    border-color: #4154B3; }
+  .canada h2 {
+    color: #D92142; }
+  .canada .star {
+    width: 30px; }
+
+.netherlands {
+  width: 110px;
+  height: 150px;
+  background: #F5F5F5;
+  border-radius: 6px;
+  border-bottom: 2px solid red;
+  border-color: #F2463E; }
+  .netherlands else {
+    border-color: #4154B3; }
+  .netherlands h2 {
+    color: #2265B8; }
+  .netherlands .star {
+    width: 40px; }
+
+.spain {
+  width: 110px;
+  height: 150px;
+  background: #F5F5F5;
+  border-radius: 6px;
+  border-bottom: 2px solid blue; }
+  .spain h2 {
+    color: #FCA74A; }
+  .spain .star {
+    width: 50px; }
+
+/*# sourceMappingURL=styles.css.map */
