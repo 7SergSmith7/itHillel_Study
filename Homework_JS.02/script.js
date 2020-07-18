@@ -8,13 +8,13 @@ let questions = [
 let answersRight = ["4", "да", "бесконечность", "голубое", "42"];
 let userAnswer;
 let score = 0;
-let douglasA;
+let douglasA = "";
 
 for (let i = 0; i < 5; i++) {
   userAnswer = prompt(questions[i]).toLowerCase();
   if (userAnswer === answersRight[i]) score += 10;
-  if (userAnswer === answersRight[4]) douglasA = true;
+  if (userAnswer === answersRight[4])
+    douglasA = " // Адамс Дуглас вам подмигнул.";
 }
 
-if (douglasA) alert("Ваш счет: " + score + "! // Адамс Дуглас вам подмигнул.");
-else alert("Ваш счет: " + score + "!");
+alert("Ваш счет: " + score + "!" + douglasA);
