@@ -23,7 +23,7 @@
           <h1 class="header__title">Dashboard</h1>
 
           <nav class="header__navigation">
-            <span>Filter:</span>
+            <span>Filter: </span>
             <select
               class="header__navigation__select"
               name="Filter"
@@ -37,14 +37,34 @@
 
         <div class="main">
           <div class="main__header">
-            <a class="main__site" href=""></a>
-            <nav class="main__navigation"></nav>
+            <a class="main__header__site" href="https://kparser.com/">
+              <img class="main__header__site__icon" alt="favicon" src="https://kparser.com/wp-content/uploads/cropped-1-32x32.png"></img>
+              <span class="main__header__site__url">https://kparser.com</span></a>
+            <nav class="main__navigation">
+              <img class="main__navigation__icon" src="../src/images/share.svg" alt="share">
+              <img class="main__navigation__icon" src="../src/images/settings.svg" alt="share">
+              <img class="main__navigation__icon" src="../src/images/delete.svg" alt="share">
+            </nav>
           </div>
+          
           <div class="main__content">
-            <div class="main__content__score"></div>
-            <div class="main__content__ranking"></div>
-            <div class="main__content__changes"></div>
-            <div class="main__content__traffic"></div>
+            <div class="main__content__score">
+              <h2>Website Score</h2>
+              <div class="main__content__score__big_metrics">
+                <span class="main__content__score__big_metrics__main">80</span>
+                <span class="main__content__score__big_metrics__main_percent">%</span>
+                <span class="main__content__score__big_metrics__change">4%</span>
+              </div>
+            </div>
+            <div class="main__content__ranking">
+              <h2>Ranking</h2>
+            </div>
+            <div class="main__content__changes">
+              <h2>Last Changes</h2>
+            </div>
+            <div class="main__content__traffic">
+              <h2>Traffic</h2>
+            </div>
           </div>
         </div>
       </div>

@@ -43,14 +43,93 @@
 .main {
   width: 1089px;
   height: 300px;
-  padding: 20px 20px 20px 32px;
+  padding: 20px 20px 20px 31px;
   box-sizing: border-box;
   background: #FFFFFF;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.04);
+}
+
+.main__content {
+  display: flex;
+  height: 191px;
+  letter-spacing: 0.01em;
+}
+
+.main__content h2 {
+  color: #818E9B;
+  font-size: 11px;
+  margin-bottom: 30px;
+}
+
+.main__content__score {
+  width: 180px;
+  border-right: 1px solid #EBEFF2;
+  margin-right: 35px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.main__content__score__big_metrics {
+  margin_bottom: 25px;
+  display: flex;
+}
+
+.main__content__score__big_metrics__main {
+  font-size: 56px;
+  color: #27BE88;
+}
+
+.main__content__score__big_metrics__main_percent {
+  font-size: 25px;
+  color: #27BE88;
+}
+
+.main__content__score__big_metrics__changes {
+  font-size: 15px;
+  color: #DD4C3A;
+}
+
+.main__content__ranking {
+  width: 275px;
+  border-right: 1px solid #EBEFF2;
+  margin-right: 35px;
+}
+
+.main__content__changes {
+  width: 220px;
+  border-right: 1px solid #EBEFF2;
+  margin-right: 35px;
+}
+
+.main__navigation {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
 }
 
 .main__header {
   height: 50px;
   display: flex;
   border-bottom: 1px solid #EBEFF2;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.main__header__site {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+
+.main__header__site__url {
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.main__header__site__icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
 }

@@ -15,7 +15,7 @@ gulp.task("myCss", function () {
 });
 
 gulp.task("myImages", function () {
-  return gulp.src("src/images/*/*").pipe(gulp.dest("build/images"));
+  return gulp.src("src/images/*").pipe(gulp.dest("build/images"));
 });
 
 gulp.task("myFonts", function () {
