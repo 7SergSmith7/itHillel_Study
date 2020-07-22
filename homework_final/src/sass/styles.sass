@@ -1,4 +1,4 @@
-@import "_variables.sass"
+@import "_variables.sass", "_mixins.sass";
 
 .container
     
@@ -45,6 +45,97 @@
         display: flex
         height: 191px
         letter-spacing: 0.01em
+        &__traffic
+            &__metrics
+                display: flex
+                font-size: 12px
+                color: $main_font_blue
+                &__main
+                    display: flex
+                    flex-direction: column
+                    width: 100px
+                    span
+                        margin-top: 10px
+                &__values
+                    width: 80px
+                    font-size: 12px
+                    display: flex
+                    flex-direction: column
+                    
+                    &__row
+                        display: flex
+                        &__changes
+                            margin-left: auto
+                            position: relative
+                            @include changes($main_red)
+                        span:first-of-type
+                            color: $main_blue
+                       
+                        span:last-of-type
+                            color: $main_green
+                            @include changes($main_green)
+                        &:nth-child(2)
+                            span:last-of-type
+                                color: $main_red
+                                @include changes($main_red)
+                        span 
+                            font-size: 12px
+                            margin-top: 10px
+                            
+                            
+        &__changes
+            h3
+                color: $header_color_grey
+                font-size: 10px
+                margin-top: 30px
+                margin-bottom: 10px
+            &__info
+                
+                display: flex
+                flex-direction: column
+                font-size: 12px
+                color: $main_font_blue
+                &__par
+                    margin-top: 10px
+                    span 
+                        color: $main_blue
+                
+        &__ranking
+            &__metrics
+                display: flex
+                    
+                &__values
+                    width: 50px
+                    
+                    &__row
+                        display: flex
+                        font-size: 12px
+                        span
+                            margin-top: 10px
+                        span:first-of-type
+                            color: $main_blue
+                            margin-right: 10px
+                        span:last-of-type
+                            color: $main_red
+                        &:nth-child(2)
+                            span:last-of-type
+                                color: $main_green
+                                @include changes($main_green)
+   
+                            
+                        &__changes
+                            margin-left: auto
+                            position: relative
+                            @include changes($main_red)
+                &__ranks
+                    display: flex
+                    font-size: 12px
+                    width: 140px
+                    flex-direction: column
+                    color: $main_font_blue
+                    span 
+                        margin-top: 10px
+                    
         h2
             color: $header_color_grey
             font-size: 11px
@@ -55,19 +146,70 @@
             margin-right: 35px
             padding-right: 30px
             box-sizing: border-box
-            &__big_metrics
-                margin_bottom: 25px
+            &__metrics
                 display: flex
+                font-size: 12px
+                width: 150px
+                &__value
+                    display: flex
+                    flex-direction: column
+                    width: 40px
+                    &__row
+                        display: flex
+                        
+                        span:first-of-type
+                            color: $main_blue
+                        span:last-of-type
+                            color: $main_red
+                        &:nth-child(2)
+                            span:last-of-type
+                                color: $main_green
+                                @include changes($main_green)
+   
+                            
+                        &__changes
+                            margin-left: auto
+                            position: relative
+                            @include changes($main_red)
+                        
+                            
+                    div
+                        margin-top: 10px   
+                &__name
+                    display: flex
+                    flex-direction: column
+                    width: 110px
+                    span 
+                        margin-top: 10px
+                    &__errors
+                        color: $main_red
+                    &__warnings
+                        color: $main_orange
+                    &__notices
+                        color: $main_blue
+            &__big_metrics
+                margin-bottom: 10px
+                display: inline-block
+                width: 150px
 
                 &__main
                     font-size: 56px
                     color: $main_green
                 &__main_percent
-                    font-size: 25px
+                    font-size: 28px
                     color: $main_green
-                &__changes
+                &__change
+                    margin-left: 25px
                     font-size: 15px
                     color: $main_red
+                    position: relative
+                &__change::before
+                    content: ''
+                    position: absolute
+                    left: -12px
+                    bottom: 5px
+                    border: 3px solid transparent
+                    border-top: 3px solid $main_red
                     
         &__ranking
             width: 275px

@@ -1,0 +1,13 @@
+@mixin changes($color)
+    &:before
+        content: ''
+        position: absolute
+        left: -10px
+        
+        border: 3px solid transparent
+        @if $color==$main_red
+            border-top: 3px solid $main_red
+            bottom: 0px
+        @else
+            border-bottom: 3px solid $main_green
+            bottom: 5px
