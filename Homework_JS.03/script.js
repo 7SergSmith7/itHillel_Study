@@ -1,20 +1,19 @@
 function calculate(arg1, arg2, sign) {
   switch (sign) {
     case "+":
-      alert(`${arg1} + ${arg2} = ${arg1 + arg2}`);
-      break;
+      return `${arg1} + ${arg2} = ${arg1 + arg2}`;
+
     case "-":
-      alert(`${arg1} - ${arg2} = ${arg1 - arg2}`);
-      break;
+      return `${arg1} - ${arg2} = ${arg1 - arg2}`;
+
     case "*":
-      alert(`${arg1} * ${arg2} = ${arg1 * arg2}`);
-      break;
+      return `${arg1} * ${arg2} = ${arg1 * arg2}`;
+
     case "/":
-      alert(`${arg1} / ${arg2} = ${arg1 / arg2}`);
-      break;
+      return `${arg1} / ${arg2} = ${arg1 / arg2}`;
+
     default:
-      alert(`Некоректный ввод.`);
-      break;
+      return `Некоректный ввод.`;
   }
 }
 let userAnswer;
@@ -31,4 +30,4 @@ for (let i = 0; i < arrayEnter.length; i++) {
   }
 }
 
-calculate(Number(arrayEnter[0]), Number(arrayEnter[2]), arrayEnter[1]);
+alert(calculate(Number(arrayEnter[0]), Number(arrayEnter[2]), arrayEnter[1]));
