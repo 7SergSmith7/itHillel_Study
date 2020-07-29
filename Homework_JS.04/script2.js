@@ -17,16 +17,16 @@ function calculate(a, b, sign) {
   }
 
   function add(a, b) {
-    return Number(a) + Number(b);
+    return a + b;
   }
   function sub(a, b) {
-    return Number(a) - Number(b);
+    return a - b;
   }
   function multi(a, b) {
-    return Number(a) * Number(b);
+    return a * b;
   }
   function div(a, b) {
-    return Number(a) / Number(b);
+    return a / b;
   }
 }
 
@@ -43,13 +43,8 @@ do {
     prompt("Введите одно действие для вычисления (+-/*).")
   );
 
-  for (let i = 0; i < arraySigns.length; i++) {
-    if (userInputSign == arraySigns[i]) {
-      flag = false;
-      break;
-    }
-  }
-} while (flag);
+  flag = arraySigns.indexOf(userInputSign);
+} while (flag === -1);
 
 flag = true;
 do {
@@ -68,7 +63,7 @@ for (let i = 0; i < userInputNumberOper; i++) {
     arrayInputNums[i] = prompt(`Введите число ${i + 1}`);
   } while (isNaN(arrayInputNums[i]));
 }
-
+result = arrayInputNums[0];
 userImputPresentation = String(arrayInputNums[0]);
 for (let i = 1; i < arrayInputNums.length; i++) {
   userImputPresentation =
@@ -77,10 +72,7 @@ for (let i = 1; i < arrayInputNums.length; i++) {
     userInputSign +
     " " +
     String(arrayInputNums[i]);
+  result = calculate(Number(result), Number(arrayInputNums[i]), userInputSign);
 }
 
-result = arrayInputNums[0];
-for (i = 1; i < arrayInputNums.length; i++) {
-  result = calculate(result, arrayInputNums[i], userInputSign);
-}
 alert(`${userImputPresentation} = ${result}`);
