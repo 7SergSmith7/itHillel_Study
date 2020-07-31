@@ -24,7 +24,8 @@ function calculate(operation, arrayNumbs) {
   }
   alert(`${expression} = ${result}`);
 }
-function getOperation(inputOperation) {
+
+function getOperation() {
   let flag;
   const arraySigns = ["+", "-", "*", "/"];
   do {
@@ -37,7 +38,7 @@ function getOperation(inputOperation) {
   return inputOperation;
 }
 
-function getNumbers(userInput) {
+function getNumbers() {
   let arrayEnter;
   do {
     userInput = String(prompt("Введите как минимум 2 числа через пробел."));
@@ -48,11 +49,8 @@ function getNumbers(userInput) {
     }
 
     for (let i = 0; i < arrayEnter.length; i++) {
-      arrayEnter[i] = parseInt(arrayEnter[i]);
-    }
-
-    for (let i = 0; i < arrayEnter.length; i++) {
       while (isNaN(arrayEnter[i]) || arrayEnter[i] == "") {
+        arrayEnter[i] = parseInt(arrayEnter[i]);
         if (arrayEnter.length == 1) break;
         arrayEnter.splice(i, 1);
       }
