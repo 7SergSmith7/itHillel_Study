@@ -27,14 +27,12 @@ function getArrayNumbers(number) {
 }
 
 function checkNumber() {
-  let userInput;
-  let flag = true;
-  do {
-    userInput = +prompt("Please enter a positive integer number and > 1.");
-    if (Number.isInteger(userInput) && userInput > 1) flag = false;
-  } while (flag);
-
-  return userInput;
+  const userInput = +prompt("Please enter a positive integer number and > 1.");
+  if (Number.isInteger(userInput) && userInput > 1) {
+    return userInput;
+  } else {
+    checkNumber();
+  }
 }
 
 let number = checkNumber();
