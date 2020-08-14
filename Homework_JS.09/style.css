@@ -1,0 +1,34 @@
+.container {
+  width: 300px;
+  margin: 50px 30px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 8px auto;
+}
+h2 {
+  margin: 10px auto;
+}
+
+.addTask {
+  margin: 5px 0;
+}
+
+.tasks {
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.todolist li {
+  margin: 5px 0 0 10px;
+}
+
+.todolist li::before {
+  content: "—";
+  margin-right: 10px;
+}
