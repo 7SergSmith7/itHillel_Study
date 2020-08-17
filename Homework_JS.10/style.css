@@ -1,0 +1,40 @@
+.container {
+  width: 300px;
+  margin: 50px 30px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 8px auto;
+}
+h2 {
+  margin: 10px auto;
+}
+
+.addTask {
+  margin: 5px 0;
+}
+
+.tasks {
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.todolist li {
+  margin: 5px 5px 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.remove:hover {
+  color: red;
+}
+.toDo {
+  background-color: yellow;
+}
+.done {
+  background-color: green;
+}
