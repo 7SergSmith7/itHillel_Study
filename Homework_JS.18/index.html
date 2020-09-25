@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./common/css/normalize.css" />
+    <link rel="stylesheet" href="./common/css/skeleton.css" />
+    <link rel="stylesheet" href="./common/css/dark-theme.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" async></script>
+    <title>Students marks</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="students-list-header">
+        <div class="row">
+          <div class="three columns table-item">Name</div>
+          <div class="three columns table-item">Marks</div>
+          <div class="three columns table-item">Avrg. mark</div>
+          <div class="three columns table-item">Action</div>
+        </div>
+      </div>
+      <div id="students-list" class="students-list"></div>
+      <div class="student-list-footer">
+        <div class="row">
+          <div class="three columns table-item">Group</div>
+          <div class="three columns table-item">Avrg</div>
+          <div class="three columns table-item" id="avrgGroupMark"></div>
+          <div class="three columns table-item"></div>
+        </div>
+      </div>
+      <form id="add-student-form">
+        <div class="row">
+          <div class="three columns student-input">
+            <input
+              placeholder="Enter name"
+              type="text"
+              id="student-name-input"
+              class="student-input u-full-width"
+            />
+          </div>
+          <div class="three columns student-input">
+            <input
+              placeholder="Enter marks  "
+              type="text"
+              id="student-marks-input"
+              class="student-input u-full-width"
+            />
+          </div>
+          <div class="three columns table-item">-</div>
+          <div class="three columns student-input">
+            <input
+              type="submit"
+              class="u-full-width submit-btn"
+              value="Add Student"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script type="text/template" id="student-item-template">
+      <div class="row student-item" data-students-id="{{id}}">
+        <div class="three columns table-item">{{name}}</div>
+        <div class="three columns table-item">{{marks}}</div>
+        <div class="three columns table-item">{{avrg}}</div>
+        <div class="three columns table-item delete-btn">Delete</div>
+      </div>
+    </script>
+  </body>
+</html>
