@@ -77,7 +77,7 @@ function calculateAvrGroupegMark() {
 function isValid(studentItem) {
   if (studentItem.name) {
     for (let i = 0; i < studentItem.arrayMarks.length; i++) {
-      console.log(studentItem.arrayMarks[i]);
+      
       if (isNaN(studentItem.arrayMarks[i])) return false;
     }
     return true;
