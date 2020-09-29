@@ -11,19 +11,17 @@ galleriesList.addEventListener("click", onGalleryClick);
 
 let arrayGalleries = [];
 let arrayPhotos = [];
-let activeGallery = "1";
+let activeGallery;
 
 init();
 
 function init() {
   getGalleries();
-
-  getPhotos(activeGallery);
 }
 
 function onGalleryClick(e) {
-  selectGallery = e.target.getAttribute("data-gallery-id");
-  
+  selectGallery = e.target.dataset.galleryId;
+
   if (!missClick(selectGallery)) {
     activeGallery = selectGallery;
     clearPhotosList();
@@ -32,8 +30,7 @@ function onGalleryClick(e) {
 }
 
 function missClick(id) {
-  if (id === null || id === activeGallery) return true;
-  else return false;
+  return id == null || id === activeGallery;
 }
 function clearPhotosList() {
   photosList.innerHTML = "";
@@ -54,8 +51,15 @@ function getGalleries() {
     .then((resGallery) => resGallery.json())
     .then((dataGallery) => {
       arrayGalleries = dataGallery;
+
       renderGalleryList();
+      setDefaultGallery(arrayGalleries[0].id);
+      getPhotos(activeGallery);
     });
+}
+
+function setDefaultGallery(id) {
+  activeGallery = id;
 }
 
 function renderPhotoList() {
