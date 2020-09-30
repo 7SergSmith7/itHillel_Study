@@ -1,0 +1,47 @@
+.task-list {
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-top: 20px;
+  width: 1200px;
+}
+
+.table-item {
+  margin-left: 0;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  background-color: lightyellow;
+  border-radius: 3px;
+  border: 1px solid #bbb;
+}
+
+.contact-input {
+  margin-left: 0;
+}
+
+.delete-btn:hover {
+  color: lightyellow;
+  background-color: #555;
+}
+
+.edit-btn:hover {
+  color: lightyellow;
+  background-color: #555;
+}
+
+.submit-btn {
+  font-size: 18px;
+  color: lightyellow;
+}
+.submit-btn:hover {
+  background-color: #555;
+}
+.action {
+  border: none;
+}
+.action div {
+  margin-bottom: 0;
+}
