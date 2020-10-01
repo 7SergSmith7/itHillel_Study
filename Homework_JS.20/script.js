@@ -35,9 +35,8 @@ function onContactListClick(event) {
       break;
     case event.target.classList.contains(EDIT_BTN_CLASS):
       editContactId = idContact;
-
+      scrollDown();
       editContact(editContactId);
-
       break;
   }
 }
@@ -46,6 +45,9 @@ function init() {
   getContactsList();
 }
 
+function scrollDown() {
+  addContactForm.scrollIntoView({ behavior: "smooth" });
+}
 function getContactsList() {
   contactsList.innerHTML = "";
   return fetch(CONTACTS_URL)
@@ -122,15 +124,6 @@ function editContact(id) {
 }
 
 function findContactItem(id) {
-  for (let i = 0; i < arrayContactsList.length; i++) {
-    if (id == arrayContactsList[i].id) {
-      return arrayContactsList[i];
-    }
-  }
-<<<<<<< HEAD
-  //return arrayContactsList.find(contactItem => contactItem.id == id);
-=======
-//return arrayContactsList.find(contactItem => contactItem.id == id);
->>>>>>> 0e5eb56578a00181bed3f10b888cd76dc092b3a5
+  return arrayContactsList.find((contactItem) => contactItem.id == id);
 }
 // ===
