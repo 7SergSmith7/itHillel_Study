@@ -1,0 +1,48 @@
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 1500px;
+}
+
+.header {
+  height: 35px;
+  border: 1px solid #ebeff2;
+}
+
+.todo-desk {
+  border: 1px solid #ebeff2;
+  height: 1200px;
+}
+.add-ticket-btn {
+  color: white;
+  width: 50px;
+  float: right;
+  background-color: orange;
+  padding: 5px 0;
+
+  text-align: center;
+}
+.add-ticket-btn:hover {
+  background-color: green;
+}
+.todo-item {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  float: left;
+}
+.todo-item-input {
+  margin: 5px 10px;
+  width: 180px;
+  height: 160px;
+}
+.delete-btn {
+  float: right;
+  color: black;
+  margin-right: 5px;
+}
+.delete-btn:hover {
+  color: red;
+}
