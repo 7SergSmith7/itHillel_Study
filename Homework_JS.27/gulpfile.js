@@ -1,4 +1,4 @@
-const { series, parallel, src, dest } = require("gulp");
+const { series, parallel, src, dest, watch } = require("gulp");
 
 const concat = require("gulp-concat");
 const clean = require("gulp-clean");
@@ -35,6 +35,18 @@ function copyVendorJs() {
     .pipe(dest("./dist/js"));
 }
 
+function watchFiles() {
+  watch("./src/js/*.js", function rebuild() {
+    return copyJs();
+  });
+  watch("./src/css/*.css", function rebuild() {
+    return copyCss();
+  });
+  watch("./src/html/*.html", function rebuild() {
+    return copyHtml();
+  });
+}
+
 function cleanDist() {
   return src("./dist", { read: false }).pipe(clean());
 }
@@ -47,5 +59,15 @@ module.exports = {
     copyVendorJs,
     copyVendorCss,
     copyImg
+  ),
+  serve: series(
+    cleanDist,
+    copyHtml,
+    copyJs,
+    copyCss,
+    copyVendorJs,
+    copyVendorCss,
+    copyImg,
+    watchFiles
   ),
 };
