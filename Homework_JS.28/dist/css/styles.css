@@ -1,0 +1,31 @@
+h1 {
+  font-size: 25px;
+}
+
+.container {
+  margin-top: 20px;
+  width: 1200px;
+}
+
+.task-list {
+  margin-bottom: 20px;
+}
+.task-item {
+  color: #555;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 5px 0;
+  font-size: 20px;
+  background-color: lightyellow;
+}
+
+.task-item.done {
+  background-color: lightgreen;
+}
+.delete-btn {
+  float: right;
+}
+#input-task {
+  width: 829px;
+}
