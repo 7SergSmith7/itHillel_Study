@@ -13,16 +13,21 @@ export default class GalleryController {
 
     this.imageView = new GalleryImagesView();
     this.$container.append(this.imageView.$el);
+    this.imageCollection = new ImageCollection();
 
+    // this.imageCollection.getImageList().then(() => {
+    //   this.imageView.renderImages(this.imageCollection.imageList);
+    // });
     this.collection = new GalleryCollection();
 
     this.collection.getGalleryList().then(() => {
       this.listView.renderGallery(this.collection.galleryList);
-    });
 
-    this.imageCollection = new ImageCollection();
-    this.imageCollection.getImageList().then(() => {
-      this.imageView.renderImages(this.imageCollection.imageList);
+      this.imageCollection
+        .getImageList(this.collection.galleryList[0].id)
+        .then(() => {
+          this.imageView.renderImages(this.imageCollection.imageList);
+        });
     });
   }
   setGalleryId(id) {

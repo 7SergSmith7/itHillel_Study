@@ -2,6 +2,7 @@ export default class GalleryImagesView {
   constructor(config) {
     this.config = config;
     this.$el = this.initView();
+    this.$imageContainer = this.$el.find(".photos-list");
   }
 
   initView() {
@@ -11,8 +12,6 @@ export default class GalleryImagesView {
     <div id="photos-list" class="photos-list"></div>`);
   }
   renderImages(list) {
-    this.$imageContainer = $(".photos-list");
-
     this.$imageContainer.html(list.map(this.getImageTemplate).join("\n"));
   }
   getImageTemplate(imageItem) {

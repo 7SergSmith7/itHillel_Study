@@ -3,7 +3,7 @@ export default class ImageCollection {
   constructor() {
     this.imageList = [];
   }
-  getImageList(id = "1") {
+  getImageList(id) {
     return fetch(IMAGE_LIST_URL + id)
       .then((res) => res.json())
       .then((data) => (this.imageList = data));
