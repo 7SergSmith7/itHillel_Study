@@ -10,8 +10,6 @@ $(() => {
   const $sendBtn = $(".sendMsg");
   const $chatContent = $(".chat-main");
 
-  let now = new Date();
-
   API.start();
 
   $sendBtn.on("click", onSendBtnClick);
@@ -22,9 +20,9 @@ $(() => {
   };
 
   function getMsgTemplate(newMsg) {
-    return ` <div class="msg" >${nowTime()} ${newMsg.payload.username} : ${
-      newMsg.payload.message
-    }</div>`;
+    return ` <div class="msg" > ${nowTime()} <b>${
+      newMsg.payload.username
+    }</b>: ${newMsg.payload.message}</div>`;
   }
 
   function onSendBtnClick() {
@@ -33,6 +31,7 @@ $(() => {
   }
 
   function nowTime() {
-    return `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+    const now = new Date();
+    return `<i>${now.getHours()}</i>:<i>${now.getMinutes()}</i>:<i>${now.getSeconds()}</i>`;
   }
 });
