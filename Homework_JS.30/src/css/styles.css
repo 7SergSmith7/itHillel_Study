@@ -1,0 +1,16 @@
+input {
+  border-color: #bbb;
+  border-radius: 4px;
+  height: 32px;
+  padding-left: 5px;
+}
+.container {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 500px;
+}
+.chat-main {
+  border: 1px solid #bbb;
+  padding: 5px 5px;
+  border-radius: 4px;
+}
