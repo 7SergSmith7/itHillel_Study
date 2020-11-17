@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/><script src="https://code.jquery.com/jquery-3.5.1.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script><title>Contacts</title></head><body><div class="container"><div class="contacts-list-header"><div class="row"><div class="three columns table-item">Name</div><div class="three columns table-item">Surname</div><div class="three columns table-item">Phone</div><div class="three columns table-item">Action</div></div></div><div id="contacts-list" class="contacts-list"></div><div class="three columns contact-input"><input type="submit" class="u-full-width submit-btn" value="Add Contact"/></div></div><div id="dialog-form" title="Add new user"><p class="validateTips">All form fields are required.</p><form><fieldset><label for="name">Name</label> <input name="name" id="name" placeholder="Enter name" class="text ui-widget-content ui-corner-all"/> <label for="surname">Surname</label> <input name="surname" id="surname" placeholder="Enter surname" class="text ui-widget-content ui-corner-all"/> <label for="phone">Phone</label> <input name="phone" id="phone" placeholder="xx-xx-xx-xx" class="phone text ui-widget-content ui-corner-all"/><div class="phones"></div><div class="add-phone-btn">+</div><input type="submit" tabindex="-1" style="position: absolute; top: -1000px"/></fieldset></form></div><script type="text/template" id="contact-item-template"><div class="row contact-item" data-id="{{id}}">
+        <div class="three columns table-item">{{name}}</div>
+        <div class="three columns table-item">{{surname}}</div>
+
+        <div class="three columns table-item">{{phone}}</div>
+        <div class="three columns table-item action">
+          <div class="six columns table-item edit-btn">Edit</div>
+        <div class="six columns table-item delete-btn">Delete</div>
+      </div>
+      </div></script><script type="text/template" id="aditional-phone-template"><input
+
+        name="phone"
+        id="phone"
+        placeholder="xx-xx-xx-xx"
+        class="phone text ui-widget-content ui-corner-all"
+      /></script><script src="app.js"></script></body></html>
