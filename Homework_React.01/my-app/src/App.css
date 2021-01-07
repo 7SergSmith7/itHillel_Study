@@ -1,0 +1,29 @@
+.table {
+  width: 300px;
+
+  padding: 5px 5px;
+}
+.table__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.product {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.product-imput input {
+  width: 92px;
+  margin: 5px;
+}
+.product-imput__add {
+  border-radius: 5px;
+  color: white;
+  background-color: #2e3436;
+  padding: 0 15px;
+}
